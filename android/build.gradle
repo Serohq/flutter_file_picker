@@ -22,7 +22,8 @@ allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 30 // ✅ Lowered for compatibility
+    namespace 'com.mr.flutter.plugin.filepicker' // ✅ Explicitly define the namespace
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion 21
